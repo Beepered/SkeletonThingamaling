@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccwrijaktsewb"]
+
+[ext_resource type="Script" path="res://scripts/notepad.gd" id="1_6mhi3"]
+[ext_resource type="Texture2D" uid="uid://t602mx3gomgi" path="res://sprites/Notes.png" id="1_y6sln"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_baf7k"]
+size = Vector2(1592, 844)
+
+[node name="Icon" type="Sprite2D"]
+texture = ExtResource("1_y6sln")
+script = ExtResource("1_6mhi3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_baf7k")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -688.0
+offset_top = -363.0
+offset_right = 699.0
+offset_bottom = 331.0
+placeholder_text = "bump"
+
+[connection signal="mouse_shape_entered" from="Area2D" to="." method="_on_area_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="Area2D" to="." method="_on_area_2d_mouse_shape_exited"]
