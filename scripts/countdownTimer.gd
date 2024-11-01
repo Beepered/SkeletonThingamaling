@@ -1,8 +1,8 @@
 extends Label
 
-var hour : int = 0
-var minute : int = 0
-var second : int = 5
+var hour : int = 1
+var minute : int = 5
+var second : int = 30
 
 func _ready() -> void:
 	var timeText = "hr:min:sec"
