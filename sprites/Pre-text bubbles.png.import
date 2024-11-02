@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxfa7p6i1un01"
-path="res://.godot/imported/Text Box.png-f8112e0fddbf126ab61d7d7b43df393f.ctex"
+uid="uid://b65mjsem87u73"
+path="res://.godot/imported/Pre-text bubbles.png-37db04646e771081687c0b7d799c798c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/Text Box.png"
-dest_files=["res://.godot/imported/Text Box.png-f8112e0fddbf126ab61d7d7b43df393f.ctex"]
+source_file="res://sprites/Pre-text bubbles.png"
+dest_files=["res://.godot/imported/Pre-text bubbles.png-37db04646e771081687c0b7d799c798c.ctex"]
 
 [params]
 
