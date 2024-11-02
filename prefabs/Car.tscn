@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://ept6lhxifuh3"]
+[gd_scene load_steps=3 format=3 uid="uid://cc4ecmjvcxoi7"]
 
 [ext_resource type="Script" path="res://scripts/carMovement.gd" id="1_m1qam"]
 [ext_resource type="Texture2D" uid="uid://bua14u4d86kui" path="res://sprites/Skull.png" id="2_xhykn"]

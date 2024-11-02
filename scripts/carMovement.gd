@@ -7,8 +7,8 @@ func _process(delta: float) -> void:
 	# Move the car to the right
 	position.x += speed * delta
 
-	# Check if the car is off-screen
-	if position.x > get_viewport_rect().size.x:
+	# Check if the car is off-screen (Brendan: added some space because it would have deleted itself before being offscreen)
+	if position.x > get_viewport_rect().size.x + 200:
 		queue_free()  # Remove the car from the scene
 
 # Function to set the car sprite texture
