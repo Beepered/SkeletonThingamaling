@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://cm0kxjvats888"]
+[gd_scene load_steps=2 format=3 uid="uid://cm0kxjvats888"]
+
+[ext_resource type="Script" path="res://Carter/carMovement.gd" id="1_m1qam"]
 
 [node name="Car" type="RigidBody2D"]
+script = ExtResource("1_m1qam")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,11 +1,12 @@
 extends RigidBody2D
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+var speed = 200  # Adjust speed as needed
 
+func _process(delta):
+	# Move the car to the right
+	position.x += speed * delta
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	# Check if the car is off-screen
+	if position.x > get_viewport_rect().size.x:
+		queue_free()  # Remove the car from the scene
