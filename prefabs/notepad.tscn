@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccwrijaktsewb"]
+
+[ext_resource type="Script" path="res://scripts/notepad.gd" id="1_6mhi3"]
+[ext_resource type="Texture2D" uid="uid://t602mx3gomgi" path="res://sprites/Notes.png" id="1_y6sln"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_baf7k"]
+size = Vector2(91, 844)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b05p2"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Icon" type="Sprite2D"]
+texture = ExtResource("1_y6sln")
+script = ExtResource("1_6mhi3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-761.5, 0)
+shape = SubResource("RectangleShape2D_baf7k")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -672.0
+offset_top = -372.0
+offset_right = 760.0
+offset_bottom = 386.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_b05p2")
+placeholder_text = "PLACE HOLDER TEXT"
+context_menu_enabled = false
+shortcut_keys_enabled = false
+drag_and_drop_selection_enabled = false
+middle_mouse_paste_enabled = false
+wrap_mode = 1
+
+[connection signal="mouse_shape_entered" from="Area2D" to="." method="_on_area_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="Area2D" to="." method="_on_area_2d_mouse_shape_exited"]
