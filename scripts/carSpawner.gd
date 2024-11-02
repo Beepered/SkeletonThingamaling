@@ -4,8 +4,8 @@ extends Node2D
 @export var car_sprites : Array[Texture2D]  # Array to store car textures
 var timer : float = 0.0
 var spawn_interval : float = 0.0  # Initialize spawn interval
-@export var spawnMin : float = 2.0
-@export var spawnMax : float = 4.0
+@export var spawnMin : float = 10.0
+@export var spawnMax : float = 25.0
 
 func _ready() -> void:
 	# Set the initial spawn interval to a random value between spawnMin and spawnMax seconds
@@ -20,7 +20,6 @@ func _process(delta: float) -> void:
 		spawn_interval = randf_range(spawnMin, spawnMax)
 
 func spawn_car() -> void:
-	print("spawn car")
 	var car = car_scene.instantiate()  # Instantiate a new car
 	car.position = position  # Set the car position to the spawner's position
 

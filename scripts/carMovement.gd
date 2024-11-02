@@ -1,7 +1,7 @@
 extends Node2D
 
-@onready var sprite : Sprite2D = $Sprite2D  # Reference to the sprite node
-var speed : float = 200  # Adjust speed as needed
+#@onready var sprite : Sprite2D = $Sprite2D # Reference to the sprite node
+var speed : float = 300  # Adjust speed as needed
 
 func _process(delta: float) -> void:
 	# Move the car to the right
@@ -13,4 +13,5 @@ func _process(delta: float) -> void:
 
 # Function to set the car sprite texture
 func set_sprite_texture(texture: Texture2D) -> void:
+	var sprite : Sprite2D = $Sprite2D
 	sprite.texture = texture

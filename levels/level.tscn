@@ -23,6 +23,7 @@ position = Vector2(-280.935, 284.1)
 rotation = 2.96706
 
 [node name="Notepad" parent="." instance=ExtResource("1_6q7tb")]
+z_index = 10
 position = Vector2(2614, 523)
 
 [node name="countdown_text" parent="." instance=ExtResource("2_xfwx3")]
