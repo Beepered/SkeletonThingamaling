@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dtktelyg4by70"]
 
 [ext_resource type="Script" path="res://Carter/carSpawner.gd" id="1_02k53"]
-[ext_resource type="PackedScene" uid="uid://cm0kxjvats888" path="res://Carter/Car.tscn" id="2_qelye"]
+[ext_resource type="PackedScene" uid="uid://ept6lhxifuh3" path="res://Carter/Car.tscn" id="2_qelye"]
 
 [node name="Spawner" type="Node2D"]
 script = ExtResource("1_02k53")
