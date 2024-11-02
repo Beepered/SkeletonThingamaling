@@ -1,0 +1,11 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtktelyg4by70"]
+
+[ext_resource type="Script" path="res://scripts/carSpawner.gd" id="1_cxqm2"]
+[ext_resource type="PackedScene" uid="uid://ept6lhxifuh3" path="res://prefabs/Car.tscn" id="2_qpvqe"]
+[ext_resource type="Texture2D" uid="uid://be6yac07i2w56" path="res://sprites/Red Car.png" id="3_vk63h"]
+[ext_resource type="Texture2D" uid="uid://bj6rysbuuvcl0" path="res://sprites/Sports Car.png" id="4_j6cq0"]
+
+[node name="Spawner" type="Node2D"]
+script = ExtResource("1_cxqm2")
+car_scene = ExtResource("2_qpvqe")
+car_sprites = Array[Texture2D]([ExtResource("3_vk63h"), ExtResource("4_j6cq0")])
