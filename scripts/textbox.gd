@@ -1,9 +1,9 @@
 extends Node2D
 
 var quotes = [
-	"I think I just saw an alien",
-	"I think therefore...How did\n the quote go again?",
-	"In the silence of this vast\n expanse, I find that time\n weaves stories in the sands,\n where life and death converse\n in whispers.",
+	"I think... I miss my wife.",
+	"You look like the 4th of July,\n makes me want a hot dog real bad.",
+	"Throw me,\n BOB THROW ME!",
 	"Though bleached by sun and\n wind, my presence tells of\n cycles unending, and in solitude,\n I touch the infinite.",
 	"In this sandy symphony of\n stillness, I chew the cud of\n my thoughts",
 	"To live is to suffer, to\n survive is to find some\n meaning in the suffering.",
