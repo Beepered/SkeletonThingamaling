@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctev1ei7tcwc1"]
+[gd_scene load_steps=7 format=3 uid="uid://ctev1ei7tcwc1"]
 
 [ext_resource type="PackedScene" uid="uid://ccwrijaktsewb" path="res://prefabs/notepad.tscn" id="1_6q7tb"]
 [ext_resource type="Texture2D" uid="uid://61oi5tgn8no7" path="res://sprites/Background.png" id="1_c13dq"]
 [ext_resource type="Texture2D" uid="uid://bua14u4d86kui" path="res://sprites/Skull.png" id="2_d4cdg"]
 [ext_resource type="PackedScene" uid="uid://ceypq16hdceaw" path="res://prefabs/countdown_text.tscn" id="2_xfwx3"]
+[ext_resource type="PackedScene" uid="uid://c7hlxoy1bfvkd" path="res://prefabs/display_text.tscn" id="3_w0n5h"]
+[ext_resource type="PackedScene" uid="uid://dtktelyg4by70" path="res://Carter/Spawner.tscn" id="6_8fpfj"]
 
 [node name="Level" type="Node2D"]
 
@@ -12,10 +14,13 @@ texture = ExtResource("1_c13dq")
 centered = false
 
 [node name="Skull" type="Sprite2D" parent="."]
-position = Vector2(395, 845)
+position = Vector2(607, 895)
 rotation = -2.96706
-scale = Vector2(1, 1)
 texture = ExtResource("2_d4cdg")
+
+[node name="display_text" parent="Skull" instance=ExtResource("3_w0n5h")]
+position = Vector2(-280.935, 284.1)
+rotation = 2.96706
 
 [node name="Notepad" parent="." instance=ExtResource("1_6q7tb")]
 position = Vector2(2614, 523)
@@ -28,3 +33,6 @@ offset_bottom = 124.0
 text = "10:00"
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Spawner" parent="." instance=ExtResource("6_8fpfj")]
+position = Vector2(-52, 441)
