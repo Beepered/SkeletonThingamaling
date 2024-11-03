@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvxfs67w0usdf"]
+
+[ext_resource type="Script" path="res://scripts/textbox.gd" id="1_kq58u"]
+[ext_resource type="Texture2D" path="res://scripts/Text Box.png" id="2_on74u"]
+[ext_resource type="Texture2D" path="res://scripts/Pre-text bubbles.png" id="3_rd8k8"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kq58u")
+
+[node name="Display_timer" type="Timer" parent="."]
+wait_time = 7.826
+one_shot = true
+
+[node name="Wait_timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="TextBox" type="Sprite2D" parent="."]
+position = Vector2(701.5, 371.5)
+scale = Vector2(0.735795, 0.754167)
+texture = ExtResource("2_on74u")
+
+[node name="Label" type="Label" parent="TextBox"]
+auto_translate_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -279.0
+offset_top = -186.0
+offset_right = -68.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+
+[node name="Pre-textBubbles" type="Sprite2D" parent="."]
+position = Vector2(521, 502)
+texture = ExtResource("3_rd8k8")
+
+[connection signal="timeout" from="Display_timer" to="." method="_on_display_timer_timeout"]
+[connection signal="timeout" from="Wait_timer" to="." method="_on_wait_timer_timeout"]
