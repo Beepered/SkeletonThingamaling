@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bua14u4d86kui" path="res://sprites/Skull.png" id="2_d4cdg"]
 [ext_resource type="PackedScene" uid="uid://ceypq16hdceaw" path="res://prefabs/countdown_text.tscn" id="2_xfwx3"]
 [ext_resource type="PackedScene" uid="uid://c7hlxoy1bfvkd" path="res://prefabs/display_text.tscn" id="3_w0n5h"]
-[ext_resource type="PackedScene" uid="uid://dtktelyg4by70" path="res://prefabs/Spawner.tscn" id="6_8fpfj"]
+[ext_resource type="PackedScene" uid="uid://b0blp442bcndh" path="res://prefabs/Spawner.tscn" id="6_8fpfj"]
 
 [node name="Level" type="Node2D"]
 

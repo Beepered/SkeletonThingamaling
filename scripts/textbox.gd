@@ -7,14 +7,14 @@ var quotes = [
 	"21:33",
 	"I don't want your love...\nWho said that?!",
 	"Door hinge, cloor finge, If 12 ducks in a row then how many ducks in my glow stick\nPOWER UP!!!",
-	"It's not enough sadness",
-	"The sun, moons, and stars don't have anything on me",
-	"Though bleached by sun and\n wind, my presence tells of\n cycles unending, and in solitude,\n I touch the infinite.",
-	"In this sandy symphony of\n stillness, I chew the cud of\n my thoughts",
-	"To live is to suffer, to\n survive is to find some\n meaning in the suffering.",
-	"I wonder what\n chicken tastes like.",
-	"Patience is bitter, but\n its fruit is sweet.",
-	"Yeeeehaw.\n I've always wanted to say that."
+	"It's not enough sadness.",
+	"The sun, moons, and stars don't have anything on me.",
+	"Though bleached by sun and\nwind, my presence tells of\ncycles unending, and in solitude,\nI touch the infinite.",
+	"In this sandy symphony of\nstillness, I chew the cud of\n my thoughts",
+	"To live is to suffer, to\nsurvive is to find some\n meaning in the suffering.",
+	"I wonder what\nchicken tastes like.",
+	"Patience is bitter, but\nits fruit is sweet.",
+	"Yeeeehaw.\nI've always wanted to say that."
 ]
 
 var current_quote_index = 0
@@ -23,6 +23,7 @@ var current_quote_index = 0
 @onready var text = $TextBox/Label
 
 func _ready() -> void:
+	current_quote_index = randi() % quotes.size()
 	show_next_quote()
 
 func show_next_quote() -> void:

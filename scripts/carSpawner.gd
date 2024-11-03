@@ -8,8 +8,8 @@ var spawn_interval : float = 0.0  # Initialize spawn interval
 @export var spawnMax : float = 25.0
 
 func _ready() -> void:
-	# Set the initial spawn interval to a random value between spawnMin and spawnMax seconds
-	spawn_interval = randf_range(spawnMin, spawnMax)
+	# Set the initial spawn interval to a random value between 8 - 12 seconds
+	spawn_interval = randf_range(8, 12)
 
 func _process(delta: float) -> void:
 	timer += delta
