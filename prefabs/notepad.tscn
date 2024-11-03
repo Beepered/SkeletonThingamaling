@@ -20,8 +20,8 @@ position = Vector2(-761.5, 0)
 shape = SubResource("RectangleShape2D_baf7k")
 
 [node name="TextEdit" type="TextEdit" parent="."]
-offset_left = -672.0
-offset_top = -372.0
+offset_left = -675.0
+offset_top = -293.0
 offset_right = 760.0
 offset_bottom = 386.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)

@@ -6,20 +6,21 @@ var quotes = [
 	"Throw me,\n BOB THROW ME!",
 	"21:33",
 	"I don't want your love...\nWho said that?!",
-	"Door hinge, cloor finge, If 12\n ducks in a row then how many ducks in my glow stick\nPOWER UP!!!",
+	"Door hinge, cloor finge, If 12\n ducks in a row then how \nmany ducks in my glow stick\nPOWER UP!!!",
 	"It's not enough sadness.",
-	"The sun, moons, and stars don't have anything on me.",
+	"The sun, moons, and stars \ndon't have anything on me.",
 #	"Though bleached by sun and\nwind, my presence tells of\ncycles unending, and in solitude,\nI touch the infinite.",
 #	"In this sandy symphony of\nstillness, I chew the cud of\n my thoughts",
 #	"To live is to suffer, to\nsurvive is to find some\n meaning in the suffering.",
 	"I wonder what\nchicken tastes like.",
 #	"Patience is bitter, but\nits fruit is sweet.",
-	"Yeeeehaw.\nI've always wanted to say that.",
+	"Yeeeehaw.\nI've always wanted to say \nthat.",
 	"我喜欢冰淇淋",
 	"RAH SIR",
 	"Do it DO it DO\n IT DO IT DO IT",
-	"If you dont know what you're\n doing then just say that. \nYou think I'm going to judge you or something?\n You're pathetic. Scum\n Leave this Earth.",
-	"REE ROO REE ROO REE ROO"
+	"If you dont know what you're\n doing then just say that. \nYou think I'm going to judge \nyou or something?\n You're pathetic. Scum\n Leave this Earth.",
+	"REE ROO REE ROO REE ROO",
+	"hi :3"
 ]
 
 var current_quote_index = 0

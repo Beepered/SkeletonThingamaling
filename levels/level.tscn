@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctev1ei7tcwc1"]
+[gd_scene load_steps=14 format=3 uid="uid://ctev1ei7tcwc1"]
 
 [ext_resource type="PackedScene" uid="uid://ccwrijaktsewb" path="res://prefabs/notepad.tscn" id="1_6q7tb"]
 [ext_resource type="Texture2D" uid="uid://61oi5tgn8no7" path="res://sprites/Background.png" id="1_c13dq"]
@@ -6,6 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://ceypq16hdceaw" path="res://prefabs/countdown_text.tscn" id="2_xfwx3"]
 [ext_resource type="PackedScene" uid="uid://c7hlxoy1bfvkd" path="res://prefabs/display_text.tscn" id="3_w0n5h"]
 [ext_resource type="PackedScene" uid="uid://b0blp442bcndh" path="res://prefabs/Spawner.tscn" id="6_8fpfj"]
+[ext_resource type="Texture2D" uid="uid://be6yac07i2w56" path="res://sprites/Red Car.png" id="7_tdwkf"]
+[ext_resource type="Texture2D" uid="uid://bj6rysbuuvcl0" path="res://sprites/Sports Car.png" id="8_ru0ks"]
+[ext_resource type="Texture2D" uid="uid://bolo0qqjwkthr" path="res://sprites/car_car.png" id="9_80r87"]
+[ext_resource type="Texture2D" uid="uid://ctgpesgm7xojh" path="res://sprites/Cheese Car.png" id="10_vecii"]
+[ext_resource type="Texture2D" uid="uid://mp7l56ubwqy7" path="res://sprites/longShark.png" id="11_rmg76"]
+[ext_resource type="Texture2D" uid="uid://dfv0q4adw7k3m" path="res://sprites/Skeleton Bike.png" id="12_1247e"]
+[ext_resource type="Texture2D" uid="uid://ccxfm4l0ltl6p" path="res://sprites/Chungus_car.png" id="13_g81dr"]
 
 [node name="Level" type="Node2D"]
 
@@ -37,3 +44,4 @@ text = "10:00"
 
 [node name="Spawner" parent="." instance=ExtResource("6_8fpfj")]
 position = Vector2(-52, 441)
+car_sprites = Array[Texture2D]([ExtResource("7_tdwkf"), ExtResource("8_ru0ks"), ExtResource("9_80r87"), ExtResource("10_vecii"), ExtResource("11_rmg76"), ExtResource("12_1247e"), ExtResource("13_g81dr")])
